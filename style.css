@@ -1,0 +1,145 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+
+body{
+    font-size: larger;
+    background-color: purple;
+    padding-top: 8px;
+    height: 100vh;
+    display: block;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header{
+    position: fixed;
+    z-index: 1000;
+}
+
+
+.card{
+    height: 340px;
+    width: 250px;
+    position: relative;
+    transition: all 0.3s linear;
+    transform-style: preserve-3d;
+}
+
+.front, 
+.back{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    border-radius: 10px;
+    position: absolute;
+}
+
+.front{
+    background: linear-gradient(#08aeea,#2af59a);
+    z-index: 2;
+    backface-visibility: hidden;
+}
+
+.back{
+    background: linear-gradient(#f8da61,#ff5acd);
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.container:hover .card{
+    transform: rotateY(180deg);
+    
+
+}
+
+.front img{
+    width: 250px;
+    height: 100%;
+    border-radius: 10px;
+}
+.back img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+main{
+    padding: 10px;
+    margin-top: 120px;
+    background-color: white;
+    border-radius: 40px;
+    overflow: hidden;
+    padding-top: 40px;
+
+}
+article{
+    padding: 5px;
+    display: flex;
+    flex-wrap: wrap;
+   
+    
+    
+}
+/* belong to article */
+
+.divv{
+    height: 20px;
+    width: 400px;
+}
+.divvv{
+    border: 2px solid white;
+    height: fit-content;
+    width: 400px;
+    text-align: center;
+}
+footer{
+    border-top: 10px solid #e26ee5;
+    background-color: white;
+    width: 100%;
+    height: 200px;
+    padding: 10px;
+    padding-top: 80px;
+    border-radius: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: scroll;
+    
+}
+
+footer div{
+    height: 100px;
+    width: 300px;
+    padding: 5px;
+    text-align: center;
+}
+.footer-icon{
+    display: flex;
+    flex-wrap: wrap;
+    width: 150px;
+    padding-left: 60px;
+
+}
+.footer-icon img{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+}
+.skull{
+    height: 200px;
+    width: 300px;
+
+}
+.skull img{
+    max-width: 100%;
+    height: 100%;
+}
+

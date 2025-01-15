@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackAlien Portfolio</title>
+    <link rel="stylesheet" href="portfolio.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Workbench&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+<script src="js/portfolio.js"></script>
+</head>
+<body>
+    <header style="text-align: center;display: inline-flex;">
+        <div class="links">
+            <a  href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contacts.html">Contact</a>
+            <a href="portfolio.html">Portfolio</a>
+        </div>
+        <style>
+       .links{
+            display: flex;
+            flex-wrap: wrap;
+            position: relative;
+            padding: 20px 0;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+    
+        }
+        
+        .links a{
+            font-family: popping;
+            align-items: center;
+            text-align: center;
+            background-color: #E26EE5;
+            margin-left: 5px;
+            display: block;
+            padding: 10px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+
+        }
+        .links a:hover{
+            background-color: gray;
+            color: white;
+    
+        }
+    
+        
+        
+        </style>
+    </header>
+    <main>
+        <h2 style="text-align: center;">Experience & Personal Projects</h2>
+        <h3 style="width: 100%; text-align: center;">Experience</h3>
+        <div class="attract" style="text-align: center;">
+
+            <p>
+                <b>Krystal Digital</b><br>
+                I'm thrilled to have contributed to enhancing the frontend of the company's portfolio during my first contract job. The year-long contract, starting in December 2022 and concluding in December 2023, allowed me to take on numerous frontend tasks as a junior web developer. Additionally, I collaborated closely with the team, making valuable contributions to various projects.
+            </p> <br>
+        
+        <div class="video" style="text-align: center;">
+              <video class="myvideo" controls autoplay loop>
+                  <source src="IMAGE/video krystal.mp4" type="video/mp4">
+                  this browser does not support this specific video 
+              </video>
+        </div>
+        </div>
+        <div style="text-align: center;" class="attract">
+            <h3>RESTUARANT WEBSITE</h3>
+            <p>I created this project for a client through freelancing in 2022, and I charged only $300 for my services as a frontend web developer. It marked my first paid assignment. Click on "review" to take a look at the outcome.</p>
+            <img style="height: 450px; width: 250px; border-radius: 10px;" src="IMAGE/kitchinimg.jpeg" alt=""> <br>
+            <a href="https://hyfem.github.io/kitchen/index.html"><input type="button" value="review" id="button1"></a>
+        </div> <br>
+            <article>
+                <br><h3>Personal Projet</h3>
+                <div class="artidiv">
+                    <h4>Simple Calculator</h4>
+                    <p>This is one of the project <br>i made back then in 2022 its made with just <br>html and css click review to check the funtionality </p>
+                    <img style="height: 400px;" src="IMAGE/cal.jpeg" alt=""> <br>
+                    <a href="https://hyfem.github.io/blackaliencal.github.io/"><input type="button" value="Check" id="button1"></a>
+                    
+                </div>
+                <div class="artidiv1" style="text-align: center;">
+                    
+                </div>
+
+            </article>
+            <aside style="width: 100%; text-align: center; margin-top: 80px;">
+                <div>
+                    <H3>Rate Me</H3>
+                    <a href="portfolio.html?item=item1#item"><button id="fullstar"><span class="material-symbols-outlined">
+                        star_rate
+                        </span></button></a>
+                        <a href="portfolio.html?item=item2#item"><button id="halfstar"><span class="material-symbols-outlined">
+                            star_rate_half
+                            </span></button></a>
+                            <p>Click on the above icon <br> to rate me a full star or half thanks</p>
+                    <form id="PortfolioForm" onsubmit="return validateportfolioForm()">
+                        <label for="rate"></label> <br>
+                        <select name="item" id="item">
+                            <OPTion value="...">...</OPTion>
+                            <option value="item1">Full Star</option>
+                            <option value="item2"> Half Star</option>
+                        </select> <br>
+                        <label for="name&email">Name & Email</label> <br>
+                        <input type="name" id="name1" name="name" placeholder="sample: Onize Fridausy" required> <br>
+                        <input type="email" id="email1" name="email" placeholder="example@gmail.com" required> <br>
+                        <label for="note">Comments & observation </label> <br>
+                        <textarea name="note" id="note1" cols="30" rows="10" placeholder="Comments And Observation Here" required></textarea> <br>
+                        <a href="#"><input type="button" id="submitButton" value="Submit" onclick="alert('submitteds ucessfully')"></a>
+                    </form>
+                </div>
+            </aside>
+
+        
+        
+        
+    </main>
+    <footer>
+        <div>
+            <p><b>
+                Email <br>
+                 Ifemi18100@gmai.com <br>
+                 ifemi18100@outlook.com
+                Ayindeyusufifemi18100@gmail.com
+            </b></p>
+        </div>
+        <div class="footer-icon">
+            <a href="https://github.com"><img src="IMAGE/git.jpg" alt=""></a>
+            <a href="https://www.linkedin.com/in/yusuf-ayinde-a9251a297/"><img src="IMAGE/linkd.jpg" alt=""></a>
+            <a href="https://www.instagram.com/hyfem_box/"><img src="IMAGE/ig.jpg" alt=""></a>
+            <a href="https://twitter.com/Hyfem_Box"><img src="IMAGE/x logo.jpg" alt=""></a>
+            <a href="https://t.me/Wildbag"><img src="IMAGE/tele.jpeg" alt=""></a>
+        </div>
+        <div class="skull"><img src="IMAGE/skull.jpg" alt=""></div>
+        
+
+    </footer>
+</body>
+</html>
